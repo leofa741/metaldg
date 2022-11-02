@@ -1,0 +1,10 @@
+# Force HTTPS (If "RewriteEngine On" exists, plese remove it from this code)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://giancarli.com.ar/$1 [R,L]
+</IfModule>
+# Force HTTPS
+
+
+
